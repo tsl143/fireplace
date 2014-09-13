@@ -318,15 +318,13 @@ $grameenphone_color = #00ACE7;
     margin-left: 0;
 }
 
-.feed-collection,
-[data-page-type~="newpop"] {
+.feed-collection {
     .feed-tile-header {
         margin-left: 70px;
     }
 }
 
-.feed-brand,
-[data-page-type~="newpop"] {
+.feed-brand {
     .feed-tile-header:before {
         background-position: center;
         background-repeat: no-repeat;
@@ -396,18 +394,6 @@ $grameenphone_color = #00ACE7;
 }
 
 
-[data-page-type~="newpop"] {
-    .feed-tile-header:before {
-        background-color: $breezy-blue;
-    }
-    [data-type="popular"] .feed-tile-header:before {
-        background-image: url(../img/icons/popular.png);
-    }
-    [data-type="new"] .feed-tile-header:before {
-        background-image: url(../img/icons/new.png);
-    }
-}
-
 .feed .multi-app-tile.mkt-tile {
     background-color: #fff;
     margin: 0 auto;
@@ -422,6 +408,7 @@ $grameenphone_color = #00ACE7;
         font-weight: 500;
         line-height: 22px;
         padding: 5px 0 0;
+        text-align: center;
     }
     .app-list {
         clear: both;
