@@ -12,6 +12,10 @@ define('views/app/ratings/add',
         if (textarea) {
             textarea.focus();
         }
+        var ratingLabel = document.querySelector('.rating-label'); 
+        if (ratingLabel) {
+            ratingLabel.style.visibility = 'hidden';
+        }
 
     }).on('focus', '.add-review textarea', function() {
         if (window.scrollTo && !caps.widescreen()) {
